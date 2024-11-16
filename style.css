@@ -1,0 +1,129 @@
+/* Ajuste para telas pequenas */
+body {
+    background: linear-gradient(to bottom, #ff9a9e, #fecfef);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease;
+    border: 2px solid #ff7597;
+    backdrop-filter: blur(8px);
+}
+
+h1 {
+    color: #ff7597;
+    font-size: 2.5em;
+    margin: 0.5em 0;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    color: #a63e6d;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 1em 0;
+    text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.pergunta {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 90%;
+    margin: 10px 0;
+    border-radius: 12px;
+    border: 1px solid #ff7597;
+    outline: none;
+    font-size: 1em;
+    color: #a63e6d;
+    background: #fff0f6;
+}
+
+input[type="text"]::placeholder {
+    color: #a63e6d;
+    opacity: 0.7;
+}
+
+button {
+    background-color: #ff7597;
+    color: #ffffff;
+    font-size: 1.1em;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #d94a67;
+    transform: scale(1.1);
+}
+
+#contador {
+    display: none;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1.5s ease;
+}
+
+#tempoJuntos {
+    font-size: 1.5em;
+    color: #ff7597;
+    margin-top: 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Ajuste para dispositivos menores */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
+    #tempoJuntos {
+        font-size: 1.2em;
+    }
+}
